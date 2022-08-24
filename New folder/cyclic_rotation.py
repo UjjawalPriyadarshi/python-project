@@ -1,0 +1,20 @@
+def rotate(A,n):
+    x=A[n-1]
+    for i in range (n-1,0,-1):
+        A[i]=A[i-1]
+    A[0]=x,
+
+#Driver function
+A=list()
+n=int(input("Enter the size of the List::"))
+print("Enter the Element of the List::")
+for i in range(int(n)):
+    k=int(input(""))
+    A.append(k)
+print("The array is::>")
+for i in range (0,n):
+    print(A[i],end='')
+rotate(A,n)
+print("\n Rotated array is ")
+for i in range(0,n):
+    print(A[i],end='')
